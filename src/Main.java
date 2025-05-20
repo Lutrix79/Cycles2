@@ -12,8 +12,9 @@ public class Main {
         while (totalCash < 2_459_000) {
             totalCash += eachMonthCash;
             i++;
+            System.out.println("Месяц " + i +", сумма накоплений равна "  + totalCash + " рублей");
         }
-        System.out.println("Месяц " + i +", сумма накоплений равна "  + totalCash + " рублей");
+        System.out.println("Общая сумма накоплений равна "  + totalCash + " рублей");
         System.out.println();
 
         //Задача №2
@@ -35,11 +36,10 @@ public class Main {
         int populationY = 12_000_000;
         int birthRate = 17 * 12_000;
         int mortalityRate = 8 * 12_000;
-        i = 0;
-        for (; i < 10; i++) {
+        for (int j=1; j <= 10; j++) {
             populationY += birthRate - mortalityRate;
+            System.out.println("Год " + j +", численность населения составляет "  + populationY + " человек");
         }
-        System.out.println("Год " + i +", численность населения составляет "  + populationY + " человек");
         System.out.println();
 
         //Задача №4
